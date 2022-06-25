@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+
+.main .main-inner, .main .main-inner .window, .main .main-inner .btns-bar, .main .main-inner .btns-bar .btn-attack {
+  border: 1px gray solid;
+  border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 3px 3px gray;
+          box-shadow: 0px 3px 3px gray;
+}
+
+header .main-title {
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px -3px 3px gray;
+          box-shadow: 0px -3px 3px gray;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.main .main-inner {
+  margin: 104px auto;
+  width: 600px;
+  height: 600px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 3px 3px gray;
+          box-shadow: 0px 3px 3px gray;
+}
+
+.main .main-inner .window {
+  margin: 10px 10px;
+  height: 70%;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 3px gray;
+          box-shadow: 0px 3px 3px gray;
+}
+
+.main .main-inner .window .hp-bar {
+  margin: 10px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .main-inner .window .hp-bar .hp-icon {
+  color: red;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+
+.main .main-inner .window .hp-bar .hp-stat {
+  width: 90%;
+  height: 20px;
+  background-color: red;
+  border: 1px grey solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main .main-inner .window .hp-number {
+  text-align: center;
+}
+
+.main .main-inner .btns-bar {
+  margin: 10px 10px;
+  height: 24%;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 3px gray;
+          box-shadow: 0px 3px 3px gray;
+}
+
+.main .main-inner .btns-bar .btn-attack {
+  margin: 10px 200px;
+  width: 30%;
+  height: 20%;
+  cursor: pointer;
+  background-color: red;
+  -webkit-box-shadow: 0px 3px 3px gray;
+          box-shadow: 0px 3px 3px gray;
+}
+
+.main .main-inner .btns-bar .btn-attack:active {
+  -webkit-box-shadow: 0px 1px 1px gray;
+          box-shadow: 0px 1px 1px gray;
+}
