@@ -2,9 +2,18 @@ body {
   margin: 0;
 }
 
-.main .main-inner, .main .main-inner .window, .main .main-inner .btns-bar, .main .main-inner .btns-bar .btn-attack {
+.main .main-inner .btns-bar .btns-skills .skill-one, .main .main-inner .btns-bar .btns-skills .skill-two, .main .main-inner .btns-bar .btns-skills .skill-three, .main .main-inner .btns-bar .btns-skills .skill-four, .main .main-inner .btns-bar .btns-skills .skill-five, .main .main-inner, .main .main-inner .window, .main .main-inner .window .monster-img, .main .main-inner .btns-bar, .main .main-inner .btns-bar .btn-attack {
   border: 1px gray solid;
   border-radius: 10px;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-one, .main .main-inner .btns-bar .btns-skills .skill-two, .main .main-inner .btns-bar .btns-skills .skill-three, .main .main-inner .btns-bar .btns-skills .skill-four, .main .main-inner .btns-bar .btns-skills .skill-five {
+  margin: 5px 20px;
+  height: 80%;
+  width: 74px;
+  background-color: lightblue;
+  -webkit-box-shadow: 0px 3px 3px gray;
+          box-shadow: 0px 3px 3px gray;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,7 +55,7 @@ footer {
   margin: 104px auto;
   width: 600px;
   height: 600px;
-  background-color: whitesmoke;
+  background-color: dimgray;
   -webkit-box-shadow: 0px 3px 3px gray;
           box-shadow: 0px 3px 3px gray;
 }
@@ -54,7 +63,7 @@ footer {
 .main .main-inner .window {
   margin: 10px 10px;
   height: 70%;
-  background-color: white;
+  background-color: lightgray;
   -webkit-box-shadow: 0px 3px 3px gray;
           box-shadow: 0px 3px 3px gray;
 }
@@ -108,10 +117,24 @@ footer {
   color: red;
 }
 
+.main .main-inner .window .monster-img {
+  margin: 10px 10px;
+  height: 75%;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 3px gray;
+          box-shadow: 0px 3px 3px gray;
+}
+
+.main .main-inner .window .monster-img img {
+  padding: 0 25%;
+  height: 100%;
+  width: auto;
+}
+
 .main .main-inner .btns-bar {
   margin: 10px 10px;
   height: 24%;
-  background-color: white;
+  background-color: lightgray;
   -webkit-box-shadow: 0px 3px 3px gray;
           box-shadow: 0px 3px 3px gray;
 }
@@ -129,4 +152,68 @@ footer {
 .main .main-inner .btns-bar .btn-attack:active {
   -webkit-box-shadow: 0px 1px 1px gray;
           box-shadow: 0px 1px 1px gray;
+}
+
+.main .main-inner .btns-bar .skills-text {
+  text-align: center;
+}
+
+.main .main-inner .btns-bar .btns-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40%;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-one {
+  display: none;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-one:active {
+  -webkit-box-shadow: 0px 1px 1px gray;
+          box-shadow: 0px 1px 1px gray;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-two {
+  display: none;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-two:active {
+  -webkit-box-shadow: 0px 1px 1px gray;
+          box-shadow: 0px 1px 1px gray;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-three {
+  display: none;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-three:active {
+  -webkit-box-shadow: 0px 1px 1px gray;
+          box-shadow: 0px 1px 1px gray;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-four {
+  display: none;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-four:active {
+  -webkit-box-shadow: 0px 1px 1px gray;
+          box-shadow: 0px 1px 1px gray;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-five {
+  display: none;
+}
+
+.main .main-inner .btns-bar .btns-skills .skill-five:active {
+  -webkit-box-shadow: 0px 1px 1px gray;
+          box-shadow: 0px 1px 1px gray;
+}
+
+.main .main-inner .btns-bar .info-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }

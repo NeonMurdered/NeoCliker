@@ -10,6 +10,15 @@ $box-shadow-reverse: 0px -3px 3px gray;
    border-radius: 10px;
 }
 
+%skill-btn {
+   margin: 5px 20px;
+   height: 80%;
+   width: 74px;
+   background-color: lightblue;
+   box-shadow: $box-shadow-default;
+   @extend %border-default;
+}
+
 h1, h2, h3, h4, h5, h6 {
    margin: 0;
 }
@@ -46,14 +55,14 @@ footer {
       margin: 104px auto;
       width: 600px;
       height: 600px;
-      background-color: whitesmoke;
+      background-color: dimgray;
       box-shadow: $box-shadow-default;
       @extend %border-default;
 
       .window {
          margin: 10px 10px;
          height: 70%;
-         background-color: white;
+         background-color: lightgray;
          box-shadow: $box-shadow-default;
          @extend %border-default;
 
@@ -95,12 +104,26 @@ footer {
             text-align: center;
             color: red;
          }
+
+         .monster-img {
+            margin: 10px 10px;
+            height: 75%;
+            background-color: white;
+            box-shadow: $box-shadow-default;
+            @extend %border-default;
+         }
+
+         .monster-img img {
+            padding: 0 25%;
+            height: 100%;
+            width: auto;
+         }
       }
 
       .btns-bar {
          margin: 10px 10px;
          height: 24%;
-         background-color: white;
+         background-color: lightgray;
          box-shadow: $box-shadow-default;
          @extend %border-default;
 
@@ -116,6 +139,65 @@ footer {
             &:active {
                box-shadow: 0px 1px 1px gray;
             }
+         }
+
+         .skills-text {
+            text-align: center;
+         }
+
+         .btns-skills {
+            display: flex;
+            height: 40%;
+            
+            .skill-one {
+               display: none;
+               @extend %skill-btn;
+
+               &:active {
+                  box-shadow: 0px 1px 1px gray;
+               }
+            }
+
+            .skill-two {
+               display: none;
+               @extend %skill-btn;
+
+               &:active {
+                  box-shadow: 0px 1px 1px gray;
+               }
+            }
+
+            .skill-three {
+               display: none;
+               @extend %skill-btn;
+
+               &:active {
+                  box-shadow: 0px 1px 1px gray;
+               }
+            }
+
+            .skill-four {
+               display: none;
+               @extend %skill-btn;
+
+               &:active {
+                  box-shadow: 0px 1px 1px gray;
+               }
+            }
+
+            .skill-five {
+               display: none;
+               @extend %skill-btn;
+
+               &:active {
+                  box-shadow: 0px 1px 1px gray;
+               }
+            }
+         }
+
+         .info-skills {
+            display: flex;
+            justify-content: space-around;
          }
       }
    }
