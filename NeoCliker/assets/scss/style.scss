@@ -61,6 +61,7 @@ footer {
             margin: 10px 90px;
             display: flex;
             justify-content: center;
+            align-items: center;
 
             .hp-icon {
                color: red;
@@ -70,17 +71,29 @@ footer {
             }
 
             .hp-stat {
-               width: 90%;
+               width: 75%;
                height: 20px;
                background-color: red;
                border: 1px grey solid;
                border-radius: 10px;
                overflow: hidden;
             }
+
+            .killed-bar {
+               display: flex;
+               width: 10%;
+               margin-left: 10px;
+            }
          }
 
          .hp-number {
             text-align: center;
+         }
+
+         .monster-boss {
+            display: none;
+            text-align: center;
+            color: red;
          }
       }
 

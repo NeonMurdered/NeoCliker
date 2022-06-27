@@ -12,7 +12,6 @@
    <header class="header">
       <h1 class="main-title">NeoCliker</h1>
    </header>
-
    <div class="main">
       <div class="container">
          <div class="main-inner">
@@ -20,8 +19,13 @@
                <div class="hp-bar">
                   <i class="hp-icon fa fa-heart" aria-hidden="true"></i>
                   <progress class="hp-stat" value="100" max="100" id="hpProgress"></progress>
+                  <div class="killed-bar">
+                     <div>Killed:</div>
+                     <div class="killed-number" id="killedNum"></div>
+                  </div>
                </div>
                <div class="hp-number" id="hp"></div>
+               <div class="monster-boss" id="boss">BOSS</div>
             </div>
             <div class="btns-bar">
                <button class="btn-attack" id="btnAttack">Attack</button>
@@ -30,7 +34,6 @@
          </div>
       </div>
    </div>
-
    <footer>
       <div class="container">
          <div class="skills">

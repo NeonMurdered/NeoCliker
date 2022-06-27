@@ -67,6 +67,9 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .main-inner .window .hp-bar .hp-icon {
@@ -79,7 +82,7 @@ footer {
 }
 
 .main .main-inner .window .hp-bar .hp-stat {
-  width: 90%;
+  width: 75%;
   height: 20px;
   background-color: red;
   border: 1px grey solid;
@@ -87,8 +90,22 @@ footer {
   overflow: hidden;
 }
 
+.main .main-inner .window .hp-bar .killed-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  margin-left: 10px;
+}
+
 .main .main-inner .window .hp-number {
   text-align: center;
+}
+
+.main .main-inner .window .monster-boss {
+  display: none;
+  text-align: center;
+  color: red;
 }
 
 .main .main-inner .btns-bar {
