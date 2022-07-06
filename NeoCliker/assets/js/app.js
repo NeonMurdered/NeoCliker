@@ -13,12 +13,6 @@ document.addEventListener("DOMContentLoaded", function(event)
    let skillFivedamage = 60; // skill damage 5
    let monsterHealth = hp;
    let killedNumber = document.getElementById("killedNum").innerHTML = 0;
-   let monsterBoss = document.getElementById("boss").innerHTML;
-   let skillOne = document.getElementById("skillOne");
-   let skillTwo = document.getElementById("skillTwo");
-   let skillThree = document.getElementById("skillThree");
-   let skillFour = document.getElementById("skillFour");
-   let skillFive = document.getElementById("skillFive");
    //console log
    console.log("Monster Health : " + monsterHealth);
    //---------------------------//
@@ -105,6 +99,26 @@ document.addEventListener("DOMContentLoaded", function(event)
          console.log("Check skills!");
       }
    }
+   //then hp <= 0
+   function beginMonster() 
+   {
+      hpRandom = hpPool[Math.floor(Math.random() * hpPool.length)];
+      hp = hpRandom;
+      monsterHealth = hp;
+      hpTotal = hp;
+      killedNumber = document.getElementById("killedNum").innerHTML = killedNumber + 1;
+      checkSkills();
+      numHP = document.getElementById('hp').innerHTML = hp + "/" + hpTotal;
+      document.getElementById("hpProgress").value = hp;
+      document.getElementById("hpProgress").max = hp;
+      //show message
+      alert("Monster in Killed");
+      //console log
+      console.log("Monster is Killed");
+      console.log("Create a new Monster...");
+      console.log("Monster Health : " + monsterHealth);
+      searchBoss();
+   }
    //On Btn Attack click event
    document.getElementById('btnAttack').addEventListener("click", function(event)
    {
@@ -117,22 +131,7 @@ document.addEventListener("DOMContentLoaded", function(event)
       }
       else 
       {
-         hpRandom = hpPool[Math.floor(Math.random() * hpPool.length)];
-         hp = hpRandom;
-         monsterHealth = hp;
-         hpTotal = hp;
-         killedNumber = document.getElementById("killedNum").innerHTML = killedNumber + 1;
-         checkSkills();
-         numHP = document.getElementById('hp').innerHTML = hp + "/" + hpTotal;
-         document.getElementById("hpProgress").value = hp;
-         document.getElementById("hpProgress").max = hp;
-         //show message
-         alert("Monster in Killed");
-         //console log
-         console.log("Monster is Killed");
-         console.log("Create a new Monster...");
-         console.log("Monster Health : " + monsterHealth);
-         searchBoss();
+         beginMonster();
       }
    });
    //On Btn SkillOne click event
@@ -147,22 +146,7 @@ document.addEventListener("DOMContentLoaded", function(event)
       }
       else 
       {
-         hpRandom = hpPool[Math.floor(Math.random() * hpPool.length)];
-         hp = hpRandom;
-         monsterHealth = hp;
-         hpTotal = hp;
-         killedNumber = document.getElementById("killedNum").innerHTML = killedNumber + 1;
-         checkSkills();
-         numHP = document.getElementById('hp').innerHTML = hp + "/" + hpTotal;
-         document.getElementById("hpProgress").value = hp;
-         document.getElementById("hpProgress").max = hp;
-         //show message
-         alert("Monster in Killed");
-         //console log
-         console.log("Monster is Killed");
-         console.log("Create a new Monster...");
-         console.log("Monster Health : " + monsterHealth);
-         searchBoss();
+         beginMonster();
       }
    });
    //On Btn SkillTwo click event
@@ -177,22 +161,7 @@ document.addEventListener("DOMContentLoaded", function(event)
       }
       else 
       {
-         hpRandom = hpPool[Math.floor(Math.random() * hpPool.length)];
-         hp = hpRandom;
-         monsterHealth = hp;
-         hpTotal = hp;
-         killedNumber = document.getElementById("killedNum").innerHTML = killedNumber + 1;
-         checkSkills();
-         numHP = document.getElementById('hp').innerHTML = hp + "/" + hpTotal;
-         document.getElementById("hpProgress").value = hp;
-         document.getElementById("hpProgress").max = hp;
-         //show message
-         alert("Monster in Killed");
-         //console log
-         console.log("Monster is Killed");
-         console.log("Create a new Monster...");
-         console.log("Monster Health : " + monsterHealth);
-         searchBoss();
+         beginMonster();
       }
    });
    //On Btn SkillThree click event
@@ -207,22 +176,7 @@ document.addEventListener("DOMContentLoaded", function(event)
       }
       else 
       {
-         hpRandom = hpPool[Math.floor(Math.random() * hpPool.length)];
-         hp = hpRandom;
-         monsterHealth = hp;
-         hpTotal = hp;
-         killedNumber = document.getElementById("killedNum").innerHTML = killedNumber + 1;
-         checkSkills();
-         numHP = document.getElementById('hp').innerHTML = hp + "/" + hpTotal;
-         document.getElementById("hpProgress").value = hp;
-         document.getElementById("hpProgress").max = hp;
-         //show message
-         alert("Monster in Killed");
-         //console log
-         console.log("Monster is Killed");
-         console.log("Create a new Monster...");
-         console.log("Monster Health : " + monsterHealth);
-         searchBoss();
+         beginMonster();
       }
    });
    //On Btn SkillFour click event
@@ -237,22 +191,7 @@ document.addEventListener("DOMContentLoaded", function(event)
       }
       else 
       {
-         hpRandom = hpPool[Math.floor(Math.random() * hpPool.length)];
-         hp = hpRandom;
-         monsterHealth = hp;
-         hpTotal = hp;
-         killedNumber = document.getElementById("killedNum").innerHTML = killedNumber + 1;
-         checkSkills();
-         numHP = document.getElementById('hp').innerHTML = hp + "/" + hpTotal;
-         document.getElementById("hpProgress").value = hp;
-         document.getElementById("hpProgress").max = hp;
-         //show message
-         alert("Monster in Killed");
-         //console log
-         console.log("Monster is Killed");
-         console.log("Create a new Monster...");
-         console.log("Monster Health : " + monsterHealth);
-         searchBoss();
+         beginMonster();
       }
    });
    //On Btn SkillFive click event
@@ -267,22 +206,7 @@ document.addEventListener("DOMContentLoaded", function(event)
       }
       else 
       {
-         hpRandom = hpPool[Math.floor(Math.random() * hpPool.length)];
-         hp = hpRandom;
-         monsterHealth = hp;
-         hpTotal = hp;
-         killedNumber = document.getElementById("killedNum").innerHTML = killedNumber + 1;
-         checkSkills();
-         numHP = document.getElementById('hp').innerHTML = hp + "/" + hpTotal;
-         document.getElementById("hpProgress").value = hp;
-         document.getElementById("hpProgress").max = hp;
-         //show message
-         alert("Monster in Killed");
-         //console log
-         console.log("Monster is Killed");
-         console.log("Create a new Monster...");
-         console.log("Monster Health : " + monsterHealth);
-         searchBoss();
+         beginMonster();
       }
    });
 });
