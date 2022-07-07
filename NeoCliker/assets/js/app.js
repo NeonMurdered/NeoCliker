@@ -143,6 +143,14 @@ document.addEventListener("DOMContentLoaded", function(event)
          hp = document.getElementById("hpProgress").value -= skillOneDamage;
          //console log
          console.log("The monster takes damage from skill one : " + skillOneDamage); 
+         //Lock
+         document.getElementById('skillOne').disabled = true;
+         document.getElementById('skillOne').style.backgroundColor = "red";
+         // Unlock
+         setTimeout(function() {
+            document.getElementById('skillOne').disabled = false;
+            document.getElementById('skillOne').style.backgroundColor = "lightblue";
+         }, 3000);
       }
       else 
       {
@@ -157,7 +165,15 @@ document.addEventListener("DOMContentLoaded", function(event)
          numHP = document.getElementById('hp').innerHTML = hp - skillTwodamage + "/" + hpTotal;
          hp = document.getElementById("hpProgress").value -= skillTwodamage;
          //console log
-         console.log("The monster takes damage from skill two : " + skillTwodamage); 
+         console.log("The monster takes damage from skill two : " + skillTwodamage);
+         //Lock
+         document.getElementById('skillTwo').disabled = true;
+         document.getElementById('skillTwo').style.backgroundColor = "red";
+         // Unlock
+         setTimeout(function() {
+            document.getElementById('skillTwo').disabled = false;
+            document.getElementById('skillTwo').style.backgroundColor = "lightblue";
+         }, 5000);
       }
       else 
       {
@@ -172,7 +188,15 @@ document.addEventListener("DOMContentLoaded", function(event)
          numHP = document.getElementById('hp').innerHTML = hp - skillThreedamage + "/" + hpTotal;
          hp = document.getElementById("hpProgress").value -= skillThreedamage;
          //console log
-         console.log("The monster takes damage from skill three : " + skillThreedamage); 
+         console.log("The monster takes damage from skill three : " + skillThreedamage);
+         //Lock
+         document.getElementById('skillThree').disabled = true;
+         document.getElementById('skillThree').style.backgroundColor = "red";
+         // Unlock
+         setTimeout(function() {
+            document.getElementById('skillThree').disabled = false;
+            document.getElementById('skillThree').style.backgroundColor = "lightblue";
+         }, 7000);
       }
       else 
       {
@@ -187,7 +211,15 @@ document.addEventListener("DOMContentLoaded", function(event)
          numHP = document.getElementById('hp').innerHTML = hp - skillFourdamage + "/" + hpTotal;
          hp = document.getElementById("hpProgress").value -= skillFourdamage;
          //console log
-         console.log("The monster takes damage from skill four : " + skillFourdamage); 
+         console.log("The monster takes damage from skill four : " + skillFourdamage);
+         //Lock
+         document.getElementById('skillFour').disabled = true;
+         document.getElementById('skillFour').style.backgroundColor = "red";
+         // Unlock
+         setTimeout(function() {
+            document.getElementById('skillFour').disabled = false;
+            document.getElementById('skillFour').style.backgroundColor = "lightblue";
+         }, 10000);
       }
       else 
       {
@@ -202,7 +234,15 @@ document.addEventListener("DOMContentLoaded", function(event)
          numHP = document.getElementById('hp').innerHTML = hp - skillFivedamage + "/" + hpTotal;
          hp = document.getElementById("hpProgress").value -= skillFivedamage;
          //console log
-         console.log("The monster takes damage from skill five : " + skillFivedamage); 
+         console.log("The monster takes damage from skill five : " + skillFivedamage);
+         //Lock
+         document.getElementById('skillFive').disabled = true;
+         document.getElementById('skillFive').style.backgroundColor = "red"; 
+         // Unlock
+         setTimeout(function() {
+            document.getElementById('skillFive').disabled = false;
+            document.getElementById('skillFive').style.backgroundColor = "lightblue";
+         }, 15000);
       }
       else 
       {
